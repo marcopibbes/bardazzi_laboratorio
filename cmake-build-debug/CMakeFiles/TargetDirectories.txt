@@ -1,0 +1,3 @@
+/home/mpibbes/Scrivania/C++/bardazzi_lab/cmake-build-debug/CMakeFiles/bardazzi_lab.dir
+/home/mpibbes/Scrivania/C++/bardazzi_lab/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/mpibbes/Scrivania/C++/bardazzi_lab/cmake-build-debug/CMakeFiles/rebuild_cache.dir
