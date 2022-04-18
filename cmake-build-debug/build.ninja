@@ -61,6 +61,12 @@ build CMakeFiles/bardazzi_lab.dir/Note.cpp.o: CXX_COMPILER__bardazzi_lab_Debug /
   OBJECT_DIR = CMakeFiles/bardazzi_lab.dir
   OBJECT_FILE_DIR = CMakeFiles/bardazzi_lab.dir
 
+build CMakeFiles/bardazzi_lab.dir/Collection.cpp.o: CXX_COMPILER__bardazzi_lab_Debug /home/mpibbes/Scrivania/C++/bardazzi_lab/Collection.cpp || cmake_object_order_depends_target_bardazzi_lab
+  DEP_FILE = CMakeFiles/bardazzi_lab.dir/Collection.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/bardazzi_lab.dir
+  OBJECT_FILE_DIR = CMakeFiles/bardazzi_lab.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target bardazzi_lab
@@ -69,7 +75,7 @@ build CMakeFiles/bardazzi_lab.dir/Note.cpp.o: CXX_COMPILER__bardazzi_lab_Debug /
 #############################################
 # Link the executable bardazzi_lab
 
-build bardazzi_lab: CXX_EXECUTABLE_LINKER__bardazzi_lab_Debug CMakeFiles/bardazzi_lab.dir/main.cpp.o CMakeFiles/bardazzi_lab.dir/Note.cpp.o
+build bardazzi_lab: CXX_EXECUTABLE_LINKER__bardazzi_lab_Debug CMakeFiles/bardazzi_lab.dir/main.cpp.o CMakeFiles/bardazzi_lab.dir/Note.cpp.o CMakeFiles/bardazzi_lab.dir/Collection.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/bardazzi_lab.dir
   POST_BUILD = :

@@ -3,4 +3,4 @@ project(bardazzi_lab)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(bardazzi_lab main.cpp Note.cpp Note.h)
+add_executable(bardazzi_lab main.cpp Note.cpp Note.h Collection.cpp Collection.h)

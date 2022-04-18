@@ -3,3 +3,7 @@
 //
 
 #include "Note.h"
+
+Note::Note(std::string name, std::string text): name(name), text(text){}
+
+
