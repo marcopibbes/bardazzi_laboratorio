@@ -67,6 +67,24 @@ build CMakeFiles/bardazzi_lab.dir/Collection.cpp.o: CXX_COMPILER__bardazzi_lab_D
   OBJECT_DIR = CMakeFiles/bardazzi_lab.dir
   OBJECT_FILE_DIR = CMakeFiles/bardazzi_lab.dir
 
+build CMakeFiles/bardazzi_lab.dir/Observer.cpp.o: CXX_COMPILER__bardazzi_lab_Debug /home/mpibbes/Scrivania/C++/bardazzi_lab/Observer.cpp || cmake_object_order_depends_target_bardazzi_lab
+  DEP_FILE = CMakeFiles/bardazzi_lab.dir/Observer.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/bardazzi_lab.dir
+  OBJECT_FILE_DIR = CMakeFiles/bardazzi_lab.dir
+
+build CMakeFiles/bardazzi_lab.dir/Subject.cpp.o: CXX_COMPILER__bardazzi_lab_Debug /home/mpibbes/Scrivania/C++/bardazzi_lab/Subject.cpp || cmake_object_order_depends_target_bardazzi_lab
+  DEP_FILE = CMakeFiles/bardazzi_lab.dir/Subject.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/bardazzi_lab.dir
+  OBJECT_FILE_DIR = CMakeFiles/bardazzi_lab.dir
+
+build CMakeFiles/bardazzi_lab.dir/Important.cpp.o: CXX_COMPILER__bardazzi_lab_Debug /home/mpibbes/Scrivania/C++/bardazzi_lab/Important.cpp || cmake_object_order_depends_target_bardazzi_lab
+  DEP_FILE = CMakeFiles/bardazzi_lab.dir/Important.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles/bardazzi_lab.dir
+  OBJECT_FILE_DIR = CMakeFiles/bardazzi_lab.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target bardazzi_lab
@@ -75,7 +93,7 @@ build CMakeFiles/bardazzi_lab.dir/Collection.cpp.o: CXX_COMPILER__bardazzi_lab_D
 #############################################
 # Link the executable bardazzi_lab
 
-build bardazzi_lab: CXX_EXECUTABLE_LINKER__bardazzi_lab_Debug CMakeFiles/bardazzi_lab.dir/main.cpp.o CMakeFiles/bardazzi_lab.dir/Note.cpp.o CMakeFiles/bardazzi_lab.dir/Collection.cpp.o
+build bardazzi_lab: CXX_EXECUTABLE_LINKER__bardazzi_lab_Debug CMakeFiles/bardazzi_lab.dir/main.cpp.o CMakeFiles/bardazzi_lab.dir/Note.cpp.o CMakeFiles/bardazzi_lab.dir/Collection.cpp.o CMakeFiles/bardazzi_lab.dir/Observer.cpp.o CMakeFiles/bardazzi_lab.dir/Subject.cpp.o CMakeFiles/bardazzi_lab.dir/Important.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/bardazzi_lab.dir
   POST_BUILD = :

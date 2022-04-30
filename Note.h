@@ -4,83 +4,57 @@
 
 #ifndef BARDAZZI_LAB_NOTE_H
 #define BARDAZZI_LAB_NOTE_H
+
 #include <string>
 #include <iostream>
+#include<list>
+#include "Subject.h"
 
-class Note {
+class Note : public Subject {
 public:
-    Note(std::string name, std::string text);
-    ~Note() {
-        std::cout<<name<< " deleted."<<std::endl;
-    };
+//costruttore
+    Note(std::string t, std::string tx);
 
-    bool getImportant ()
-    {
-        return isImportant;
-    }
-    void toggleImportant ()
-    {
-        if(isImportant){
-            isImportant=false;
-            std::cout<< name<< " set as not important"<<std::endl;}
-        else
-        {
-            std::cout<< name<<" set as important"<<std::endl;
-            isImportant=true;}
+//costruttore di copia
+    Note(Note &orig);
 
-    }
+//cancella una nota (se non è bloccata)
+    bool deleteNote();
 
-    void toggleLocked()
-    {
-        if (isLocked)
-        {
-            std::cout<<name<<" unlocked."<<std::endl;
-            isLocked=false;
-        }
-        else
-        {
-            std::cout<<name<<" locked."<<std::endl;
-            isLocked=true;
-        }
-    }
+//modifica titolo e testo di una nota (se non bloccata)
+    bool modifyNote(std::string &t, std::string &tx);
 
+//metodi getter e setter
+    std::string getTitle() const;
 
-    void editNote (std::string a, std::string b)
-    {
-        if (isLocked)
-            std::cout<<"Note is locked! Cannot modify it."<<std::endl;
-        else {
-            name = a;
-            text = b;
-            std::cout<<"Successfully edited."<<std::endl;
-        }
-    }
+    void setTitle(std::string &t);
 
-    void deleteNote()
-    {
-        if(isLocked)
-            std::cout<<"Note is locked! Cannot delete it."<<std::endl;
-        else
-        {
-            delete this;
-        }
-    }
+    std::string getText() const;
 
-    std::string getName()
-    {
-        return name;
-    }
+    void setText(std::string &t);
 
-    std::string getText()
-    {
-        return text;
-    }
+    bool isBlocked() const;
+
+    void setBlocked(bool b);
+
+    bool getIsImportant() const;
+
+    void setIsImportant(bool i);
+
+//metodi design pattern observer
+    void notify() override;
+
+    void subscribe(Observer *o) override;
+
+    void unsubscribe(Observer *o) override;
+
 
 private:
-    bool isImportant=false;
-    bool isLocked=false;
+    std::string title;
     std::string text;
-    std::string name;
+    bool blocked = false;
+    bool isImportant = false;
+    std::list<Observer *> observersList;
 };
 
 
