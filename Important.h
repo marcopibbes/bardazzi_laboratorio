@@ -15,7 +15,7 @@ class Subject;
 
 class Important : public Collection {
 public:
-    //design patter singleton
+    //design pattern singleton
     static Important *getInstance();
 
     //distruttore
